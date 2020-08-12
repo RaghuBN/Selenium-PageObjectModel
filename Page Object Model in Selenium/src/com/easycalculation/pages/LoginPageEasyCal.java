@@ -7,13 +7,13 @@ public class LoginPageEasyCal {
 
 	WebDriver driver;
 
-	By email = By.id("log_email");
-	By password = By.name("log_password");
-	By login = By.xpath("//input[@name='log_submit']");
-
 	public LoginPageEasyCal(WebDriver driver) {
 		this.driver = driver;
 	}
+	
+	By email = By.id("log_email");
+	By password = By.name("log_password");
+	By login = By.xpath("//input[@name='log_submit']");
 
 	public void typeEmail() {
 		driver.findElement(email).sendKeys("9740673180");
